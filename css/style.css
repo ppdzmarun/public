@@ -1,0 +1,301 @@
+@font-face {
+	font-family: "inconsolata";
+	src: url("../fonts/inconsolata.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	color: #333;
+	font-family: "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "WenQuanYi Zen Hei Sharp";
+}
+::-webkit-scrollbar {
+  width: 13px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #777;/*#276677;*/
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;/*#3db4b2;*/
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #ddd;
+}
+::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+::selection{background:rgba(255,255,0,0.3);color:#000}
+a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+h1,h2,h3,h4,b{
+	color: #000;
+	font-family: "inconsolata", "NSimSun", "SimSun", "STSong", "AR PL SungtiL GB", "TW\-Sung", "WenQuanYi Bitmap Song";
+}
+a,
+a:link,
+a:visited{
+	text-decoration: none;
+	cursor: pointer;
+	color: #276677;
+}
+a:hover{
+	color: #9A0511;
+}
+a small{
+	color: #999;
+	font-weight: bold;
+}
+small{
+	font-size: 60%;
+	font-weight: normal;
+	font-family: "inconsolata";
+}
+blockquote{
+	color:#666666;
+	margin:0;
+	padding-left: 3em;
+	border-left: 0.5em #EEE solid;
+}
+hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
+pre code{
+	font-family: "inconsolata";
+	overflow-x: auto;
+}
+.animation{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
+.half-width{
+	width: 50%;
+}
+.half-height{
+	height: 50%;
+}
+.text-left{
+	text-align: left;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+.go-top{
+  z-index: 100;
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  width: 100px;
+  display: none;
+  color: #276677;
+  text-align: center;
+  line-height: 40px;
+  font-size: 15px;
+}
+.go-top:hover{
+  color: #3db4b2;
+}
+#pComment{
+	margin-top: 40px;
+	width: 100%;
+	border: 0;
+}
+#pShare{
+	margin-top: 10px;
+}
+.header{
+	z-index: 100;
+	position: fixed;
+	left: 10%;
+	top: 0;
+	width: 80%;
+	height: 60px;
+}
+.header ul {
+	list-style-type:none;
+	padding: 0;
+}
+.header h1 {
+	font-weight: normal;
+	font-size: 40px;
+}
+.header h1 small{
+	font-size: 50%;
+}
+.blog-header{
+	float: left;
+	margin: 0 0;
+	left: 0;
+	height: 60px;
+	line-height: 60px;
+	font-family: "Century Gothic";
+}
+.blog-header a{
+	color: #3db4b2;
+}
+.blog-header a:hover{
+	color: #276677;
+}
+.nav{
+	z-index: 100;
+	float: right;
+	left: 0;
+	top: 0;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+.nav li{
+	display: inline;
+}
+.nav .tab{
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+	height: 100%;
+	width: 100px;
+	background: #333;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+.nav .tab:hover{
+	height: 45px;
+	line-height: 45px;
+}
+.nav .selected{	
+	height: 45px;
+	line-height: 45px;
+	background: #9A0511;
+}
+#dark{
+	display: none;
+	z-index: 25;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+}
+#showContainer{
+	position: fixed;
+	z-index: 50;
+	left: 100%;
+}
+#showContainer .page{
+	overflow-y: auto;
+	background: #fff;
+}
+#showContainer img{
+	max-width: 100%;
+}
+.close{
+	font-size: 20px;
+	line-height: 40px;
+}
+.container{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 400%;
+	height: 100%;
+}
+
+.fixed-col{
+	position: absolute;
+	padding-right: 0.5%;
+	top: 70px;
+	width: 3.5%;
+	text-align: left;
+	overflow: hidden;
+}
+.fixed-col-1{
+	left: 2.5%;
+}
+.fixed-col-2{
+	position: absolute;
+	left: 27.5%;
+}
+.fixed-col-3{
+	left: 52.5%;
+}
+.fixed-col-4{
+	left: 77.5%;
+}
+.page{
+	float: left;
+	width: 25%;
+	height: 100%;
+	background: #fff;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.content{
+	margin: 70px auto;
+	padding-bottom: 100px;
+	width: 80%;
+}
+.left-col{
+	float: left;
+	width: 17%;
+	padding-right: 3%;
+	min-height: 20px;
+	font-family: "inconsolata", "NSimSun", "SimSun", "STSong", "AR PL SungtiL GB", "TW\-Sung", "WenQuanYi Bitmap Song"；
+;
+}
+.left-col p{
+	margin: 10px 0;
+}
+.right-col{
+	float: left;
+	width: 80%;
+	padding-bottom: 70px;
+}
+.title-list{
+	float: left;
+	width: 100%;
+}
+.title-list div{
+	position: relative;
+	margin-bottom: 30px;
+	padding: 20px 5% 20px 5%;
+	width: 90%;
+	background: #fff;
+	border: 1px solid #ddd;
+	/*box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);*/
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.title-list div:hover{
+	/*box-shadow: 3px 3px 10px rgba(39, 102, 119, 0.7);*/
+	left: -15px;
+}
+.title-list div h2{
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	overflow:hidden;
+}
+.title-list div p{
+	text-align: right;
+	margin: 0;
+	font-size: 15px;
+	font-family: "inconsolata", "NSimSun", "SimSun", "STSong", "AR PL SungtiL GB", "TW\-Sung", "WenQuanYi Bitmap Song";
+}
+#featuredList a{
+	display: block;
+	margin: 10px 0;
+}
