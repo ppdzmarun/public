@@ -120,7 +120,7 @@ window.MyBlog = {
 		_('indexList').innerHTML = '列表加载中...';
 		// _('featuredList').innerHTML = '列表加载中...';
 		if (window.pList) {
-			MyBlog.pList = eval('(' + pList + ')');
+			MyBlog.pList = pList;
 			MyBlog.initWithContent();
 			if (callback) callback();
 		} else {
