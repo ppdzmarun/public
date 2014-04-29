@@ -1,26 +1,14 @@
 window.onload = function() {
 	MyBlog.select(1);
-	PRouter.route('/posts', function() {
+	PRouter.route('/posts/?', function() {
 		MyBlog.hidePage();
 		MyBlog.select(1);
 	}, 'show');
-	PRouter.route('/posts/', function() {
-		MyBlog.hidePage();
-		MyBlog.select(1);
-	}, 'show');
-	PRouter.route('/featured_posts', function() {
+	PRouter.route('/featured_posts/?', function() {
 		MyBlog.hidePage();
 		MyBlog.select(2);
 	})
-	PRouter.route('/featured_posts/', function() {
-		MyBlog.hidePage();
-		MyBlog.select(2);
-	})
-	PRouter.route('/about', function() {
-		MyBlog.hidePage();
-		MyBlog.select(3);
-	})
-	PRouter.route('/about/', function() {
+	PRouter.route('/about/?', function() {
 		MyBlog.hidePage();
 		MyBlog.select(3);
 	})
@@ -120,7 +108,7 @@ window.MyBlog = {
 		_('indexList').innerHTML = '列表加载中...';
 		// _('featuredList').innerHTML = '列表加载中...';
 		if (window.pList) {
-			MyBlog.pList = pList;
+			MyBlog.pList = window.pList;
 			MyBlog.initWithContent();
 			if (callback) callback();
 		} else {
