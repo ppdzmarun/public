@@ -8,21 +8,29 @@ window.onload = function() {
 		MyBlog.hidePage();
 		MyBlog.select(1);
 	}, 'show');
-	PRouter.route('/featured_posts', function() {
+	PRouter.route('/project', function() {
 		MyBlog.hidePage();
 		MyBlog.select(2);
+	})
+	PRouter.route('/project/', function() {
+		MyBlog.hidePage();
+		MyBlog.select(2);
+	})
+	PRouter.route('/featured_posts', function() {
+		MyBlog.hidePage();
+		MyBlog.select(3);
 	})
 	PRouter.route('/featured_posts/', function() {
 		MyBlog.hidePage();
-		MyBlog.select(2);
+		MyBlog.select(3);
 	})
 	PRouter.route('/about', function() {
 		MyBlog.hidePage();
-		MyBlog.select(3);
+		MyBlog.select(4);
 	})
 	PRouter.route('/about/', function() {
 		MyBlog.hidePage();
-		MyBlog.select(3);
+		MyBlog.select(4);
 	})
 	PRouter.queryRoute('pid', function(value){
 		MyBlog.showPage(value);
@@ -130,6 +138,7 @@ window.MyBlog = {
 				if (callback) callback();
 			});
 		}
+		$('#projectList').load('/imsun/1/project.html');
 		$('#featuredList').load('/featured.html');
 		$('#aboutMe').load('/about-me.html');
 	},
