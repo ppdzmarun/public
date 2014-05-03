@@ -138,7 +138,7 @@ window.MyBlog = {
 				if (callback) callback();
 			});
 		}
-		$('#projectList').load('/imsun/1/project.html');
+		$('#projectList').load('/project.html');
 		$('#featuredList').load('/featured.html');
 		$('#aboutMe').load('/about-me.html');
 	},
